@@ -1,0 +1,18 @@
+.navigation {
+    position: relative;
+  }
+  
+  .backButton,
+  .forwardButton {
+    position: fixed;
+    top: 50%;
+  }
+  
+  .backButton {
+    left: 0;
+  }
+  
+  .forwardButton {
+    right: 0;
+  }
+  
