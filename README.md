@@ -1,7 +1,6 @@
 #  Screenshoot
 
-https://raw.githubusercontent.com/manugrana2/libroneto/main/screenshot.png
-
+![LibroNeto ScreenShot](https://raw.githubusercontent.com/manugrana2/libroneto/main/screenshot.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
