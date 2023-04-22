@@ -1,5 +1,6 @@
 #  Screenshoot
-[img src="/screenshot.png"]
+
+https://raw.githubusercontent.com/manugrana2/libroneto/main/screenshot.png
 
 # Getting Started with Create React App
 
