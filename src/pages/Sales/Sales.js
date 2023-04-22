@@ -3,7 +3,7 @@ import { Button, TextField, Grid, FormControlLabel, Switch } from '@mui/material
 import { useForm } from 'react-hook-form';
 import AddIcon from '@mui/icons-material/Add';
 import CancelIcon from '@mui/icons-material/Cancel';
-import { SalesList } from '../../components/SalesList/SalesList';
+import { SalesList } from '../../parts/SalesList/SalesList';
 
 export const Sales = () => {
   const [showForm, setShowForm] = useState(false);

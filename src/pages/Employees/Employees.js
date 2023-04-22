@@ -3,7 +3,7 @@ import { Button, TextField, Grid, FormControlLabel, Switch } from '@mui/material
 import { useForm } from 'react-hook-form';
 import AddIcon from '@mui/icons-material/Add';
 import CancelIcon from '@mui/icons-material/Cancel';
-import { EmployeesList } from '../../components/EmployeesList/EmployeesList';
+import { EmployeesList } from '../../parts/EmployeesList/EmployeesList';
 export const Employees = () => {
   const [showForm, setShowForm] = useState(false);
   const headerRef = useRef(null);

@@ -3,7 +3,7 @@ import { Button, TextField, Grid, Input, InputLabel } from '@mui/material';
 import { useForm } from 'react-hook-form';
 import AddIcon from '@mui/icons-material/Add';
 import CancelIcon from '@mui/icons-material/Cancel';
-import { ExpensesList } from '../../components/ExpensesList/ExpensesList';
+import { ExpensesList } from '../../parts/ExpensesList/ExpensesList';
 
 export const Expenses = () => {
   const [showForm, setShowForm] = useState(false);
