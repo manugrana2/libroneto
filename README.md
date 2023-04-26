@@ -1,4 +1,4 @@
-#  Screenshoot
+#  Screenshot
 
 ![LibroNeto ScreenShot](https://raw.githubusercontent.com/manugrana2/libroneto/main/screenshot.png)
 # Getting Started with Create React App
