@@ -1,0 +1,32 @@
+div.tab{
+    display: flex;
+    flex-basis: 250px;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
+    transition: background-color 2s, transfor 2s, shadow 2s;
+    cursor:pointer;
+    border-radius: 16px;
+    text-decoration: none;
+}
+div.tab:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 12px;
+
+}
+div.tab .tab-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.tab-img{
+    width: 40%;
+}
+
+.tab-link{
+    text-decoration: none;
+    color: rgb(25, 118, 210);
+}

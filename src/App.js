@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { AppBar } from './parts/AppBar/AppBar';
+import AppBar from './components/AppBar/AppBar';
 import { MainContent } from './components/MainContent/MainContent';
 import { Navigation } from './components/Navigation/Navigation';
 import Home from './pages/Home/Home';
@@ -11,7 +11,7 @@ import { Employees } from './pages/Employees/Employees';
 import { Reports } from './pages/Reports/Reports';
 import BottomNavigation from './components/BottomNavigation/BottomNavigation';
 import { Suppliers } from './pages/Suppliers/Suppliers';
-
+import './App.css'
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
             <Route path="/reports" element={<Reports />} />
           </Routes>
         </MainContent>
-       <BottomNavigation/> 
+       <BottomNavigation/>
       </div>
     </Router>
   );

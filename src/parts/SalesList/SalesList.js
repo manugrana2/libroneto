@@ -4,14 +4,17 @@ import React, { useState, useEffect } from 'react';
 import { DialogContentText, TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Paper, Button, Dialog, DialogTitle, DialogContent, DialogActions, TextField } from '@mui/material';
 import { useForm } from 'react-hook-form';
 
+import './SalesList.css'
+
 const sampleData = [
-  { id: 1, product: 'Producto 1', seller: 'Vendedor 1', subtotal: 100, unidades: 10},
-  { id: 2, product: 'Producto 2', seller: 'Vendedor 2', subtotal: 150, units: 15},
-  { id: 3, product: 'Producto 3', seller: 'Vendedor 3', subtotal: 200, units: 20},
+  { id: 1, product: 'Producto 1', seller: 'Vendedor 1', subtotal: 100, unidades: 10 },
+  { id: 2, product: 'Producto 2', seller: 'Vendedor 2', subtotal: 150, units: 15 },
+  { id: 3, product: 'Producto 3', seller: 'Vendedor 3', subtotal: 200, units: 20 },
+  { id: 4, product: 'Producto 4', seller: 'Vendedor 4', subtotal: 20, units: 2 },
 ];
 
 const EditForm = ({ open, handleClose, data }) => {
-const [seller, setSeller] = useState(data ? data.seller : '');
+  const [seller, setSeller] = useState(data ? data.seller : '');
   const [subtotal, setSubtotal] = useState(data ? data.subtotal : 0);
   const [units, setUnits] = useState(data ? data.units : 0);
   useEffect(() => {
@@ -97,13 +100,16 @@ export const SalesList = () => {
 
   return (
     <div>
-      <TableContainer component={Paper}>
+      <TableContainer component={Paper} style={{ overflowX: 'auto', maxHeight: '500px' }}>
         <Table>
-          <TableHead>
+          <TableHead className='stickyHeader'>
             <TableRow>
+              <TableCell><span className='column-title'>Cliente</span></TableCell>
+              <TableCell><span className='column-title'>Productos</span></TableCell>
+              <TableCell><span className='column-title'>Valor total</span></TableCell>
+              <TableCell>Acciones</TableCell>
               <TableCell>Producto</TableCell>
               <TableCell>Vendedor</TableCell>
-              <TableCell>Subtotal</TableCell>
               <TableCell>Acciones</TableCell>
             </TableRow>
           </TableHead>
@@ -113,13 +119,16 @@ export const SalesList = () => {
                 <TableCell>{row.product}</TableCell>
                 <TableCell>{row.seller}</TableCell>
                 <TableCell>{row.subtotal}</TableCell>
+                <TableCell>{row.product}</TableCell>
+                <TableCell>{row.seller}</TableCell>
+                <TableCell>{row.subtotal}</TableCell>
                 <TableCell>
                   <Button color="primary" onClick={() => handleOpen(row)}>
                     Editar
                   </Button>
                   <Button color="secondary">Eliminar</Button>
                 </TableCell>
-                </TableRow>
+              </TableRow>
             ))}
           </TableBody>
         </Table>

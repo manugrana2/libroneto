@@ -36,3 +36,5 @@ export const AppBar = () => {
     </MuiAppBar>
   );
 };
+
+export default AppBar;
